@@ -28,7 +28,17 @@
     width: 100%;
     height: 500px;
   }
-
+.myname
+{
+  font-size: 70px;
+}
+@media(max-width:320px)
+{
+  .myname
+  {
+    font-size: 40px;
+  }
+}
   .about {
     margin-top: 150px;
   }
@@ -97,16 +107,24 @@
     margin-top: 10px;
     border-radius: 20px;
   }
+  .pro1
+  {
+    justify-content: center;
+    align-items: center;
+  }
   .pro:hover
   {
     transform: scale(1.1);
     transition: .3s;
   }
-  @media(max-width:360px)
+  @media(max-width:320px)
   {
     .pro
   {
     border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    
 
   }
   }
@@ -217,7 +235,7 @@ html {
      <div class="col-md-12 col-sm-12">
       <div style="padding: 30px;">
         <h4 class="text-white" style="font-size: 30px;">Hello , My name is </h4>
-        <h1 class="text-white" style="font-size: 50px;">Krushna <span>Waghumbare</span></h1><br>
+        <h1 class="text-white myname" >Krushna <span>Waghumbare</span></h1><br>
         <h3 class="text-white" style="margin-bottom: 40px;font-size: 20px;">I `am a Web Developer</h3>
         <div class="newslatter col-md-12 col-sm-12">
           <form action="">
@@ -269,10 +287,10 @@ html {
       </div>
 
       <div class="container " >
-        <div class="row" >
-          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;" >
+        <div class="row pro1" >
+          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;align-item:center;" >
             <div class="card" style="width: 18rem;">
-              <img src="nagebabalogo.avif" class="card-img-top" width="100%" height="300px">
+              <img src="nagebabalogo.avif" class="card-img-top" style="padding: 10px;" width="80%" height="300px">
               <div class="card-body">
                 <h5 class="card-title text-center">Nagebaba Multi Clone</h5>
               </div>
@@ -280,9 +298,9 @@ html {
 
             </div>
           </div>
-          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;" >
+          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;align-item:center;" >
             <div class="card" style="width: 18rem;margin-top: 10px;">
-              <img src="photography.avif" class="card-img-top" width="100%" height="300px">
+              <img src="photography.avif" class="card-img-top" style="padding: 10px;" width="80%" height="300px">
               <div class="card-body">
                 <h5 class="card-title text-center">Photography</h5>
               </div>
@@ -290,9 +308,9 @@ html {
 
             </div>
           </div>
-          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;" >
+          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;align-item:center;" >
             <div class="card" style="width: 18rem;">
-              <img src="portfolio.png" class="card-img-top" width="100%" height="300px">
+              <img src="portfolio.png" class="card-img-top" style="padding: 10px;" width="80%" height="300px">
               <div class="card-body">
                 <h5 class="card-title text-center">Portfolio</h5>
               </div>
@@ -300,9 +318,9 @@ html {
 
             </div>
           </div>
-          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;" >
+          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;align-item:center;" >
             <div class="card" style="width: 18rem;">
-              <img src="ecommerce.jpg" class="card-img-top" width="100%" height="300px">
+              <img src="ecommerce.jpg" class="card-img-top" style="padding: 10px;" width="80%" height="300px">
               <div class="card-body">
                 <h5 class="card-title text-center">E-commerce PHP</h5>
               </div>
@@ -310,9 +328,9 @@ html {
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;margin-bottom: 100px;" >
+          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;align-item:center;margin-bottom: 50px;" >
             <div class="card" style="width: 18rem;">
-              <img src="construction.jpg" class="card-img-top" width="100%" height="300px">
+              <img src="construction.jpg" class="card-img-top" style="padding: 10px;" width="80%" height="300px">
               <div class="card-body">
                 <h5 class="card-title text-center">Construction</h5>
               </div>
@@ -320,9 +338,9 @@ html {
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;" style="margin-bottom: 100px;">
+          <div class="col-md-4 col-sm-12 pro" style="margin-top: 30px;align-item:center;" style="margin-bottom: 100px;">
             <div class="card" style="width: 18rem;">
-              <img src="eCommerce1.jpg" class="card-img-top" width="100%" height="300px">
+              <img src="eCommerce1.jpg" class="card-img-top" style="padding: 10px;" width="80%" height="300px">
               <div class="card-body">
                 <h5 class="card-title text-center">E-commerce Angular</h5>
               </div>
