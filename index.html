@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-reboot.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+  <title>Portfolio</title>
+</head>
+
+<style>
+  span {
+    color: #f9004d;
+  }
+
+  .content {
+    background-image: url(hack1.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+    padding: 100px;
+  }
+
+  .about {
+    margin-top: 150px;
+  }
+
+  @media(max-width:500px) {
+    .about {
+      margin-top: 0px;
+    }
+  }
+
+  button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .2s;
+  }
+
+  button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
+
+  button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  button a:hover {
+    text-decoration: none;
+    color: #f9004d;
+  }
+
+  .img1 {
+    padding: 90px;
+    border-radius: 250px;
+  }
+
+  @media(max-width:500px) {
+    .img1 {
+      padding: 30px;
+      border-radius: 20px;
+    }
+  }
+
+  .menu li {
+    margin: 0px 10px;
+  }
+
+  .menu li:hover {
+    color: #f9004d;
+    text-decoration: none;
+    border: 2px solid #f9004d;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    /* transition: transform .4s; */
+  }
+  .pro
+  {
+    margin: 20px 40px;
+    border-radius: 20px;
+  }
+  .pro:hover
+  {
+    transform: scale(1.1);
+    transition: .3s;
+  }
+  @media(max-width:500px)
+  {
+    .pro
+  {
+    margin: 20px 70px;
+    border-radius: 20px;
+
+  }
+  }
+  footer
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1)
+{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2)
+{
+    font-size: 17px;
+    color: white;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+  .social
+{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover
+{
+   transform: scale(1.3);
+   transition: .3s;
+}
+.end
+{
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 15px;
+}
+.project
+{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+</style>
+
+<body>
+  <!-- Header session start -->
+
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="padding: 20px;">
+      <a class="navbar-brand" href="#" style="font-size: 40px;">Portfo<span
+          style="color:rgb(238, 41, 74);">lio</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav menu" style="margin-left: auto;">
+          <li class="nav-item active">
+            <a class="nav-link" href="#index">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="updated resume.pdf">Download resume</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="updated resume.pdf" role="button" data-toggle="dropdown" aria-expanded="false">
+             Download resume
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="updated resume.pdf">Action</a>
+
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <!-- <div class="name">
+    <h5 class="text-white">Hello , my name is </h5><br>
+    
+  </div> -->
+  <div class="content">
+    <h4 class="text-white" style="font-size: 30px;">Hello , My name is </h4>
+    <h1 class="text-white" style="font-size: 50px;">Krushna <span>Waghumbare</span></h1><br>
+    <h3 class="text-white" style="margin-bottom: 40px;font-size: 20px;">I `am a Web Developer</h3>
+    <div class="newslatter">
+      <form action="">
+        <input type="email" name="email" id="mail" placeholder="Enter your Email">
+        <input type="submit" name="submit" value="lets start">
+      </form>
+    </div>
+  </div>
+
+  <!-- ABout session start -->
+  
+  <section id="about">
+    <div class="container-fluid">
+      <div class="row bg-dark">
+        <div class="col-sm-12">
+          <div class="row" style="margin-top: 30px;">
+
+            <div class="col-sm-12 col-md-6">
+              <img class="img1" src="about.JPG" alt="" width="100%" height="100%" style="border-radius:50px;">
+            </div>
+
+            <div class=" about col-sm-12 col-md-6" style="padding: 60px;">
+              <h2 class=" about text-white" style="font-size: 65px;">About me</h2>
+              <h4 style="font-size: 25px;" class="text-white">Developer <span>& Designer</span></h4>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod,
+                exercitationem pariatur in id iste dolore ut minus voluptas, delectus maiores itaque voluptatibus
+                consequuntur quibusdam, asperiores quis eum odio ratione.</p>
+              <button><a href="updated resume.pdf">Download resume</a></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Project section start -->
+
+  <section id="project">
+    <div class="container-fluid" style="background-color: #101010;"  >
+      <div class="col-md-12 text-center  text-white ">
+        <br>
+        <h1 class="" style="margin-top: 30px;margin-bottom: 30px;font-size: 50px;color: white">My Projects</h1>
+        <br>
+      </div>
+
+      <div class="container " >
+        <div class="row" >
+          <div class="col-md-3 col-sm-12 pro " >
+            <div class="card" style="width: 18rem;">
+              <img src="nagebabalogo.avif" class="card-img-top" width="100%" height="300px">
+              <div class="card-body">
+                <h5 class="card-title text-center">Nagebaba Multi Clone</h5>
+              </div>
+              <button type="button" style="width: 80%;margin-left: 30px;margin-bottom:30px;color:black;">Live Demo</button>
+
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 pro " >
+            <div class="card" style="width: 18rem;">
+              <img src="photography.avif" class="card-img-top" width="100%" height="300px">
+              <div class="card-body">
+                <h5 class="card-title text-center">Photography</h5>
+              </div>
+              <button type="button" style="width: 80%;margin-left: 30px;margin-bottom:30px;color:black;">Live Demo</button>
+
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 pro " >
+            <div class="card" style="width: 18rem;">
+              <img src="portfolio.png" class="card-img-top" width="100%" height="300px">
+              <div class="card-body">
+                <h5 class="card-title text-center">Portfolio</h5>
+              </div>
+              <button type="button" style="width: 80%;margin-left: 30px;margin-bottom:30px;color:black;">Live Demo</button>
+
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 pro " >
+            <div class="card" style="width: 18rem;">
+              <img src="ecommerce.jpg" class="card-img-top" width="100%" height="300px">
+              <div class="card-body">
+                <h5 class="card-title text-center">E-commerce PHP</h5>
+              </div>
+              <button type="button" style="width: 80%;margin-left: 30px;margin-bottom:30px;color:black;">Live Demo</button>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-12 pro " >
+            <div class="card" style="width: 18rem;">
+              <img src="construction.jpg" class="card-img-top" width="100%" height="300px">
+              <div class="card-body">
+                <h5 class="card-title text-center">Construction</h5>
+              </div>
+              <button type="button" style="width: 80%;margin-left: 30px;margin-bottom:30px;color:black;">Live Demo</button>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-12 pro " style="margin-bottom: 100px;">
+            <div class="card" style="width: 18rem;">
+              <img src="eCommerce1.jpg" class="card-img-top" width="100%" height="300px">
+              <div class="card-body">
+                <h5 class="card-title text-center">E-commerce Angular</h5>
+              </div>
+              <button type="button" style="width: 80%;margin-left: 30px;margin-bottom:30px;color:black;">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- service session start -->
+  <section id="service">
+    <div class="container-fluid bg-dark"  >
+      <div class="col-md-12 text-center  text-white " >
+        <br>
+        <h1 class="" style="margin-top: 30px;margin-bottom: 30px;font-size: 50px;color:white;">Services</h1>
+        <br>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 pro " >
+            <div class="card" style="width: 18rem; text-align: center;padding: 20px;">
+              <i class="fa-solid fa-user" style="text-align: center;font-size: 50px;margin-bottom: 20px;"></i>
+              <h5>Front-end Development</h5>
+              <div class="pra">
+                   <p>Building the client-side of websites using technologies like HTML, CSS,JavaScript, Jquery , Ajax , Angular.</p>
+
+                  <p style="text-align: center;"><a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank" class="button">read more</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-12 pro " >
+            <div class="card" style="width: 18rem; text-align: center;padding: 20px;">
+              <i class="fa-solid fa-server" style="text-align: center;font-size: 50px;margin-bottom: 20px;"></i>
+              <h5>Back-end Development</h5>
+              <div class="pra">
+                   <p>Developing server-side logic, databases, and applications using technologies such as Node.js, PHP .</p>
+
+                  <p style="text-align: center;"><a href="https://builtin.com/software-engineering-perspectives/back-end-development" target="_blank" class="button">read more</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-12 pro " style="margin-bottom: 100px;" >
+            <div class="card" style="width: 18rem; text-align: center;padding: 20px;">
+              <i class="fa-brands fa-intercom" style="text-align: center;font-size: 50px;margin-bottom: 20px;"></i>
+              <h5>Custom Website Development</h5>
+              <div class="pra">
+                   <p>Design and development of unique  tailor-made websites to meet specific client requirements.</p>
+
+                  <p style="text-align: center;"><a href="https://www.snoweb.io/en/website/custom/" target="_blank" class="button">read more</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+     <!-- Footer session start -->
+
+    <footer id="contact">
+        <p>Krushna Waghumbare</p>
+        <p style="padding: 15px;">I am Full stack Developer,And currently studying in SSS Institute , Bota , Ahmednagar</p>
+        <div class="social">
+             <a href="#"><i class="fa fa-facebook-f"></i></a>
+             <a href="#"><i class="fa fa-instagram"></i></a>
+             <a href="#"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+        <p class="end">Copyright By Waghumbare Krushna</p>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/93f6d700d0.js" crossorigin="anonymous"></script>
+
+</html>
